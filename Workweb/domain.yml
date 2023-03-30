@@ -1,0 +1,112 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - user_ask_position
+  - user_ask_link_submit
+  - recruimenter_about_them
+  - recruimenter_ask_information
+  - recruimenter_ask_link_upload
+  - user_ask_company
+  - list_infor
+  - cancel_form
+entities:
+  - name_position
+  - name_company
+  - recruimenter
+  - content_type
+  - content_infor
+  - company_infor
+  - list
+  - position
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_link:
+  - text: "Mời bạn nhấp vào link sau đây! https://montapu.000webhostapp.com/"
+
+  utter_infor:
+  - text: "Mời bạn nhập thông tin cần tìm. Ví dụ: Danh sách nhân sự IT!"
+slots:
+  name_position:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name_position
+
+  recruimenter:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: recruimenter
+
+  content_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: content_type
+
+  content_infor:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: content_infor
+
+  company_infor:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: company_infor
+
+  list:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: list
+
+  position:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: position
+
+
+actions:
+  - action_about_position
+  - action_about_link_submit
+  - answer_recruitmenter
+  - action_about_company
+  - action_about_list
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

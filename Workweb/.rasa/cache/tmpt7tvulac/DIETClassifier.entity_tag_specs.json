@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-name_company",
+      "2": "I-name_company",
+      "3": "L-name_company",
+      "4": "U-name_company",
+      "5": "B-name_position",
+      "6": "I-name_position",
+      "7": "L-name_position",
+      "8": "U-name_position",
+      "9": "B-recruimenter",
+      "10": "I-recruimenter",
+      "11": "L-recruimenter",
+      "12": "U-recruimenter",
+      "13": "B-upload",
+      "14": "I-upload",
+      "15": "L-upload",
+      "16": "U-upload",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-name_company": 1,
+      "I-name_company": 2,
+      "L-name_company": 3,
+      "U-name_company": 4,
+      "B-name_position": 5,
+      "I-name_position": 6,
+      "L-name_position": 7,
+      "U-name_position": 8,
+      "B-recruimenter": 9,
+      "I-recruimenter": 10,
+      "L-recruimenter": 11,
+      "U-recruimenter": 12,
+      "B-upload": 13,
+      "I-upload": 14,
+      "L-upload": 15,
+      "U-upload": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

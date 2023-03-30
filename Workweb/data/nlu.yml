@@ -1,0 +1,123 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - có ai ở đây không ?
+    - tôi cần tư vấn ?
+    - tôi cần trò chuyện ?
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: user_ask_position
+  examples: |
+    - tôi cần tìm công việc về [Kỹ thuật viên]{"entity": "name_position"}
+    - tôi cần tìm việc làm ở vị trí [Web Frontend]{"entity": "name_position"}
+    - tôi muốn tìm việc ở vị trí [Chuyên viên]{"entity": "name_position"}
+    - tìm vị trí [Web Full Stack]{"entity": "name_position"}
+- intent: user_ask_company
+  examples: |
+    - tôi cần biết thông tin công ty [Khoa thủy sản đại học Cần Thơ]{"entity": "company_infor"}
+    - tôi cần biết thông tin công ty [Techcombank]{"entity": "company_infor"}
+    - tôi cần biết thông tin công ty [MobiFone]{"entity": "company_infor"}
+- intent: recruimenter_about_them
+  examples: |
+    - Tôi là nhà tuyển dụng
+    - Tôi cần tuyển dụng
+- intent: recruimenter_ask_information
+  examples: |
+    - Tôi muốn biết [thông tin]{"entity": "content_infor"} nhân sự
+- intent: list_infor
+  examples: |
+    - [Danh sách]{"entity": "list"} ngành [Kỹ thuật viên]{"entity": "position"}
+    - [Danh sách]{"entity": "list"} nhân sự ngành [Web Frontend]{"entity": "position"}
+    - [Danh sách]{"entity": "list"} [Chuyên viên]{"entity": "position"}
+    - [Danh sách]{"entity": "list"} xin việc [kế toán]{"entity": "position"}
+- intent: recruimenter_ask_link_upload
+  examples: |
+    - Tôi muốn [đăng bài]{"entity": "content_type"} tuyển dụng
+    - Tôi cần [đăng bài]{"entity": "content_type"} tuyển dụng
+    - [Tuyển dụng]{"entity": "content_type"} nhân sự
+    - Cần [tuyển dụng]{"entity": "content_type"} việc làm
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

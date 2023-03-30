@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+body{
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 700px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+.box .titre{
+    position: relative;
+    font-size: 25px;
+    font-weight: 500px;
+}

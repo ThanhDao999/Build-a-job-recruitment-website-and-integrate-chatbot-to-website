@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: user_ask_position
+  - action: action_about_position
+
+- story: information_company
+  steps:
+  - intent: user_ask_company
+  - action: action_about_company
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: answer_recruit
+  steps:
+  - intent: recruimenter_about_them
+  - action: answer_recruitmenter
+
+- story: answer_link
+  steps:
+  - intent: recruimenter_ask_link_upload
+    entities:
+      - content_type: "đăng bài"
+  - slot_was_set:
+      - content_type: "đăng bài"
+  - action: utter_link
+
+- story: answer_infor
+  steps:
+  - intent: recruimenter_ask_information
+    entities:
+      - content_infor: "thông tin"
+  - slot_was_set:
+      - content_infor: "thông tin"
+  - action: utter_infor
+
+- story: answer_list
+  steps:
+    - intent: list_infor
+    - action: action_about_list

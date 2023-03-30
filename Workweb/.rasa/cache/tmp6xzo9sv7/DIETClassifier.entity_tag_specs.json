@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-company_infor",
+      "2": "I-company_infor",
+      "3": "L-company_infor",
+      "4": "U-company_infor",
+      "5": "B-content_infor",
+      "6": "I-content_infor",
+      "7": "L-content_infor",
+      "8": "U-content_infor",
+      "9": "B-content_type",
+      "10": "I-content_type",
+      "11": "L-content_type",
+      "12": "U-content_type",
+      "13": "B-name_company",
+      "14": "I-name_company",
+      "15": "L-name_company",
+      "16": "U-name_company",
+      "17": "B-name_position",
+      "18": "I-name_position",
+      "19": "L-name_position",
+      "20": "U-name_position",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-company_infor": 1,
+      "I-company_infor": 2,
+      "L-company_infor": 3,
+      "U-company_infor": 4,
+      "B-content_infor": 5,
+      "I-content_infor": 6,
+      "L-content_infor": 7,
+      "U-content_infor": 8,
+      "B-content_type": 9,
+      "I-content_type": 10,
+      "L-content_type": 11,
+      "U-content_type": 12,
+      "B-name_company": 13,
+      "I-name_company": 14,
+      "L-name_company": 15,
+      "U-name_company": 16,
+      "B-name_position": 17,
+      "I-name_position": 18,
+      "L-name_position": 19,
+      "U-name_position": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
